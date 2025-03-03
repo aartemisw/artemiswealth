@@ -3,7 +3,7 @@ import { useState } from "react";
 
 export default function Home() {
   const [message, setMessage] = useState("");
-  const [chat, setChat] = useState<{ role: string; content: string }[]>([]);
+  const [chat, setChat] = useState([]);
 
   const sendMessage = async () => {
     if (!message.trim()) return;
